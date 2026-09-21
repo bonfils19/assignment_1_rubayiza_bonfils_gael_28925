@@ -12,8 +12,8 @@ Sunrise Supermarket is a retail store that sells a variety of products such as g
 ### Customer's order
 
 
-```sql
 
+```sql
 select o.order_id,
        c.customer_name as name,
        c.city,
@@ -22,7 +22,6 @@ select o.order_id,
  inner join customers c
 on o.customer_id = c.customer_id;
 ```
-
 ![Customer Orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(30).png)
 
 
@@ -37,11 +36,8 @@ SELECT
 FROM order_items oi
 INNER JOIN products p
     ON oi.product_id = p.product_id;
-    
-
-    ![order item](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png)
-
-    
+```
+![order item](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png)
 
 
 ```sql
