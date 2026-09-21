@@ -23,7 +23,7 @@ select o.order_id,
 on o.customer_id = c.customer_id;
 ```
 
-![Customer Orders] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(30).png
+![Customer Orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(30).png)
 
 
 ```sql
@@ -37,10 +37,11 @@ SELECT
 FROM order_items oi
 INNER JOIN products p
     ON oi.product_id = p.product_id;
+    
 
-    ```
-    ![order item] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png
-    `
+    ![order item](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png)
+
+    
 
 
 ```sql
@@ -57,7 +58,7 @@ LEFT JOIN orders o
 ORDER BY c.customer_id, o.order_date;
 
 ```
-[customer with orders]https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(43).png
+![customer with orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(43).png)
 
 ```sql
 WITH customer_totals AS (
@@ -83,7 +84,7 @@ JOIN customers c
 
 ```
 
-[spend above average] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(36).png
+![spend above average](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(36).png)
 
 ```sql
     SELECT
@@ -101,7 +102,7 @@ JOIN customers c
 ORDER BY o.customer_id, o.order_date;
 
 ```
-[customer order number] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(37).png
+![customer order number](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(37).png)
 
 
 ```sql
@@ -128,7 +129,7 @@ FROM order_totals
 ORDER BY order_date, order_id;
 
 ```
-[revenue ] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(38).png
+![revenue ](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(38).png)
 
 
 ```sql
@@ -153,4 +154,4 @@ WHERE previous_order_date IS NOT NULL
 ORDER BY customer_id, order_date;
 ```
 
-[days btn orders] https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(39).png
+![days btn orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(39).png)
