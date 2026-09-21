@@ -24,7 +24,7 @@ on o.customer_id = c.customer_id;
 ```
 ![Customer Orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(30).png)
 
-
+### order item
 ```sql
 SELECT
     oi.order_item_id,
@@ -39,7 +39,7 @@ INNER JOIN products p
 ```
 ![order item](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png)
 
-
+### Customer with orders
 ```sql
 
     SELECT
@@ -56,6 +56,7 @@ ORDER BY c.customer_id, o.order_date;
 ```
 ![customer with orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(43).png)
 
+### spend above average
 ```sql
 WITH customer_totals AS (
     SELECT
@@ -82,6 +83,7 @@ JOIN customers c
 
 ![spend above average](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(36).png)
 
+### Customer's order number
 ```sql
     SELECT
     o.customer_id,
@@ -101,6 +103,7 @@ ORDER BY o.customer_id, o.order_date;
 ![customer order number](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(37).png)
 
 
+### revenue
 ```sql
 WITH order_totals AS (
     SELECT
@@ -127,7 +130,7 @@ ORDER BY order_date, order_id;
 ```
 ![revenue ](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(38).png)
 
-
+### days btn orders
 ```sql
 SELECT
     customer_id,
