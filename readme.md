@@ -11,7 +11,7 @@ Sunrise Supermarket is a retail store that sells a variety of products such as g
 
 ### Customer's order
 
-
+This query shows each customer order with the customer name, city, and order date.
 
 ```sql
 select o.order_id,
@@ -25,6 +25,9 @@ on o.customer_id = c.customer_id;
 ![Customer Orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(30).png)
 
 ### order item
+
+This query displays each order item with the product details and the total value for that item.
+
 ```sql
 SELECT
     oi.order_item_id,
@@ -40,6 +43,9 @@ INNER JOIN products p
 ![order item](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(41).png)
 
 ### Customer with orders
+
+This query lists every customer and the orders linked to them, including customers without orders.
+
 ```sql
 
     SELECT
@@ -57,6 +63,9 @@ ORDER BY c.customer_id, o.order_date;
 ![customer with orders](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(43).png)
 
 ### spend above average
+
+This query ranks customers by total spending to identify who spends the most.
+
 ```sql
 WITH customer_totals AS (
     SELECT
@@ -84,6 +93,9 @@ JOIN customers c
 ![spend above average](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(36).png)
 
 ### Customer's order number
+
+This query assigns a sequential order number to each order for every customer.
+
 ```sql
     SELECT
     o.customer_id,
@@ -104,6 +116,9 @@ ORDER BY o.customer_id, o.order_date;
 
 
 ### revenue
+
+This query calculates the total revenue for each order and shows the running cumulative revenue over time.
+
 ```sql
 WITH order_totals AS (
     SELECT
@@ -131,6 +146,9 @@ ORDER BY order_date, order_id;
 ![revenue ](https://github.com/bonfils19/assignment_1_rubayiza_bonfils_gael_28925/blob/master/screenshot/Screenshot%20(38).png)
 
 ### days btn orders
+
+This query compares each order date with the previous order date for the same customer to find the gap between purchases.
+
 ```sql
 SELECT
     customer_id,
